@@ -1,0 +1,90 @@
+/* Fuente externa (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Contenedor principal */
+.contenedor {
+    background: rgba(15, 23, 42, 0.85);
+    padding: 50px;
+    border-radius: 16px;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Título */
+h1 {
+    font-family: 'Titan One', sans-serif;
+    font-size: 80px;
+    letter-spacing: 6px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+
+/* Texto descriptivo */
+.descripcion {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #e9e7ff;
+}
+
+
+/* Contenedor de botones */
+.descargas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo base de botones */
+.descargas a {
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #0f172a;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Colores distintos para cada botón */
+.descargas a:nth-child(1) {
+    background: #6d0670; /* Manual usuario */
+}
+
+.descargas a:nth-child(2) {
+    background: #ae13b4; /* Manual estándares */
+}
+
+.descargas a:nth-child(3) {
+    background: rgb(217, 50, 198); /* Manual técnico */
+}
+
+.descargas a:nth-child(4) {
+    background: #ee60f3; /* Instalador */
+}
+
+/* Hover */
+.descargas a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
